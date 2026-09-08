@@ -1,0 +1,133 @@
+telemetry_id,timestamp,cloud_account_id,resource_id,product_id,feature_id,business_unit,usage_type,usage_quantity,unit,freshness_timestamp
+TEL-00001,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-01-15T12:05:00Z
+TEL-00002,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-01-15T12:05:00Z
+TEL-00003,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-01-15T12:05:00Z
+TEL-00004,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-01-15T12:05:00Z
+TEL-00005,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-01-15T12:05:00Z
+TEL-00006,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-01-15T12:05:00Z
+TEL-00007,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-01-15T12:05:00Z
+TEL-00008,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-01-15T12:05:00Z
+TEL-00009,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-01-15T12:05:00Z
+TEL-00010,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-01-15T12:05:00Z
+TEL-00011,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-01-15T12:05:00Z
+TEL-00012,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-01-15T12:05:00Z
+TEL-00013,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-01-15T12:05:00Z
+TEL-00014,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-01-15T12:05:00Z
+TEL-00015,2026-01-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-01-15T12:05:00Z
+TEL-00016,2026-01-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-01-20T10:05:00Z
+TEL-00017,2026-01-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-01-20T10:05:00Z
+TEL-00018,2026-01-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-01-20T10:05:00Z
+TEL-00019,2026-01-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-01-20T10:05:00Z
+TEL-00020,2026-01-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-01-20T10:05:00Z
+TEL-00021,2026-01-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-01-20T10:05:00Z
+TEL-00022,2026-06-25T08:00:00Z,ACCT-ANALYTICS,res-analytics-node-005,Clinical Analytics Platform,Data Processing,Clinical Analytics,Memory-Optimized-Hours,680,Hours,2026-06-21T02:15:00Z
+TEL-00023,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-02-15T12:05:00Z
+TEL-00024,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-02-15T12:05:00Z
+TEL-00025,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-02-15T12:05:00Z
+TEL-00026,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-02-15T12:05:00Z
+TEL-00027,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-02-15T12:05:00Z
+TEL-00028,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-02-15T12:05:00Z
+TEL-00029,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-02-15T12:05:00Z
+TEL-00030,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-02-15T12:05:00Z
+TEL-00031,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-02-15T12:05:00Z
+TEL-00032,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-02-15T12:05:00Z
+TEL-00033,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-02-15T12:05:00Z
+TEL-00034,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-02-15T12:05:00Z
+TEL-00035,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-02-15T12:05:00Z
+TEL-00036,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-02-15T12:05:00Z
+TEL-00037,2026-02-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-02-15T12:05:00Z
+TEL-00038,2026-02-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-02-20T10:05:00Z
+TEL-00039,2026-02-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-02-20T10:05:00Z
+TEL-00040,2026-02-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-02-20T10:05:00Z
+TEL-00041,2026-02-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-02-20T10:05:00Z
+TEL-00042,2026-02-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-02-20T10:05:00Z
+TEL-00043,2026-02-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-02-20T10:05:00Z
+TEL-00044,2026-06-25T08:00:00Z,ACCT-ANALYTICS,res-analytics-node-005,Clinical Analytics Platform,Data Processing,Clinical Analytics,Memory-Optimized-Hours,680,Hours,2026-06-21T02:15:00Z
+TEL-00045,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-03-15T12:05:00Z
+TEL-00046,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-03-15T12:05:00Z
+TEL-00047,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-03-15T12:05:00Z
+TEL-00048,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-03-15T12:05:00Z
+TEL-00049,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-03-15T12:05:00Z
+TEL-00050,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-03-15T12:05:00Z
+TEL-00051,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-03-15T12:05:00Z
+TEL-00052,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-03-15T12:05:00Z
+TEL-00053,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-03-15T12:05:00Z
+TEL-00054,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-03-15T12:05:00Z
+TEL-00055,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-03-15T12:05:00Z
+TEL-00056,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-03-15T12:05:00Z
+TEL-00057,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-03-15T12:05:00Z
+TEL-00058,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-03-15T12:05:00Z
+TEL-00059,2026-03-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-03-15T12:05:00Z
+TEL-00060,2026-03-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-03-20T10:05:00Z
+TEL-00061,2026-03-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-03-20T10:05:00Z
+TEL-00062,2026-03-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-03-20T10:05:00Z
+TEL-00063,2026-03-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-03-20T10:05:00Z
+TEL-00064,2026-03-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-03-20T10:05:00Z
+TEL-00065,2026-03-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-03-20T10:05:00Z
+TEL-00066,2026-06-25T08:00:00Z,ACCT-ANALYTICS,res-analytics-node-005,Clinical Analytics Platform,Data Processing,Clinical Analytics,Memory-Optimized-Hours,680,Hours,2026-06-21T02:15:00Z
+TEL-00067,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-04-15T12:05:00Z
+TEL-00068,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-04-15T12:05:00Z
+TEL-00069,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-04-15T12:05:00Z
+TEL-00070,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-04-15T12:05:00Z
+TEL-00071,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-04-15T12:05:00Z
+TEL-00072,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-04-15T12:05:00Z
+TEL-00073,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-04-15T12:05:00Z
+TEL-00074,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-04-15T12:05:00Z
+TEL-00075,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-04-15T12:05:00Z
+TEL-00076,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-04-15T12:05:00Z
+TEL-00077,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-04-15T12:05:00Z
+TEL-00078,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-04-15T12:05:00Z
+TEL-00079,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-04-15T12:05:00Z
+TEL-00080,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-04-15T12:05:00Z
+TEL-00081,2026-04-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-04-15T12:05:00Z
+TEL-00082,2026-04-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-04-20T10:05:00Z
+TEL-00083,2026-04-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-04-20T10:05:00Z
+TEL-00084,2026-04-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-04-20T10:05:00Z
+TEL-00085,2026-04-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-04-20T10:05:00Z
+TEL-00086,2026-04-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-04-20T10:05:00Z
+TEL-00087,2026-04-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-04-20T10:05:00Z
+TEL-00088,2026-06-25T08:00:00Z,ACCT-ANALYTICS,res-analytics-node-005,Clinical Analytics Platform,Data Processing,Clinical Analytics,Memory-Optimized-Hours,680,Hours,2026-06-21T02:15:00Z
+TEL-00089,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-05-15T12:05:00Z
+TEL-00090,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-05-15T12:05:00Z
+TEL-00091,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-05-15T12:05:00Z
+TEL-00092,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-05-15T12:05:00Z
+TEL-00093,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-05-15T12:05:00Z
+TEL-00094,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-05-15T12:05:00Z
+TEL-00095,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-05-15T12:05:00Z
+TEL-00096,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-05-15T12:05:00Z
+TEL-00097,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-05-15T12:05:00Z
+TEL-00098,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-05-15T12:05:00Z
+TEL-00099,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-05-15T12:05:00Z
+TEL-00100,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-05-15T12:05:00Z
+TEL-00101,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-05-15T12:05:00Z
+TEL-00102,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-05-15T12:05:00Z
+TEL-00103,2026-05-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-05-15T12:05:00Z
+TEL-00104,2026-05-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-05-20T10:05:00Z
+TEL-00105,2026-05-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-05-20T10:05:00Z
+TEL-00106,2026-05-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-05-20T10:05:00Z
+TEL-00107,2026-05-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-05-20T10:05:00Z
+TEL-00108,2026-05-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-05-20T10:05:00Z
+TEL-00109,2026-05-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-05-20T10:05:00Z
+TEL-00110,2026-06-25T08:00:00Z,ACCT-ANALYTICS,res-analytics-node-005,Clinical Analytics Platform,Data Processing,Clinical Analytics,Memory-Optimized-Hours,680,Hours,2026-06-21T02:15:00Z
+TEL-00111,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-06-15T12:05:00Z
+TEL-00112,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-06-15T12:05:00Z
+TEL-00113,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-01,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-06-15T12:05:00Z
+TEL-00114,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-06-15T12:05:00Z
+TEL-00115,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-06-15T12:05:00Z
+TEL-00116,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-02,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-06-15T12:05:00Z
+TEL-00117,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-06-15T12:05:00Z
+TEL-00118,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-06-15T12:05:00Z
+TEL-00119,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-03,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-06-15T12:05:00Z
+TEL-00120,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-06-15T12:05:00Z
+TEL-00121,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-06-15T12:05:00Z
+TEL-00122,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-04,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-06-15T12:05:00Z
+TEL-00123,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Medical Imaging Platform,Image Processing,Radiology,Shared-K8s-Node-Hours,450,Node-Hours,2026-06-15T12:05:00Z
+TEL-00124,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Patient Portal,Notifications,Patient Portal,Shared-K8s-Node-Hours,350,Node-Hours,2026-06-15T12:05:00Z
+TEL-00125,2026-06-15T12:00:00Z,ACCT-SHARED,res-shared-k8s-cluster-05,Clinical Analytics Platform,Data Processing,Clinical Analytics,Shared-K8s-Node-Hours,200,Node-Hours,2026-06-15T12:05:00Z
+TEL-00126,2026-06-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-06-20T10:05:00Z
+TEL-00127,2026-06-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-01,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-06-20T10:05:00Z
+TEL-00128,2026-06-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-06-20T10:05:00Z
+TEL-00129,2026-06-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-02,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-06-20T10:05:00Z
+TEL-00130,2026-06-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Medical Imaging Platform,Image Retrieval,Radiology,Inter-Region-Data-GB,1250,GB,2026-06-20T10:05:00Z
+TEL-00131,2026-06-20T10:00:00Z,ACCT-SHARED,res-shared-gateway-03,Emergency Services,Document Access,Emergency Services,Inter-Region-Data-GB,750,GB,2026-06-20T10:05:00Z
+TEL-00132,2026-06-25T08:00:00Z,ACCT-ANALYTICS,res-analytics-node-005,Clinical Analytics Platform,Data Processing,Clinical Analytics,Memory-Optimized-Hours,680,Hours,2026-06-21T02:15:00Z

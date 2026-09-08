@@ -1,0 +1,195 @@
+resource_id,cloud_account_id,service,region,usage_type
+res-img-storage-001,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-001,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-002,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-002,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-003,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-003,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-004,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-004,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-005,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-005,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-006,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-006,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-007,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-007,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-008,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-008,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-009,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-009,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-010,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-010,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-011,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-011,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-012,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-012,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-013,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-013,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-014,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-014,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-015,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-015,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-016,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-016,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-017,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-017,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-018,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-018,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-019,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-019,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-020,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-020,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-021,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-021,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-022,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-022,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-023,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-023,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-024,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-024,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-img-storage-025,ACCT-IMAGING,Object Storage,us-east-1,Standard-Storage-GB
+res-img-comp-025,ACCT-IMAGING,Compute,us-east-1,vCPU-Hours
+res-portal-app-001,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-001,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-002,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-002,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-003,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-003,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-004,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-004,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-005,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-005,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-006,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-006,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-007,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-007,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-008,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-008,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-009,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-009,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-010,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-010,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-011,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-011,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-012,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-012,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-013,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-013,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-014,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-014,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-015,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-015,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-016,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-016,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-017,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-017,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-018,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-018,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-019,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-019,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-portal-app-020,ACCT-PORTAL,Container Platform,us-east-2,Container-Hours
+res-portal-db-020,ACCT-PORTAL,Database,us-east-2,IOPS-and-Storage
+res-analytics-node-001,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-001,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-002,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-002,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-003,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-003,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-004,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-004,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-005,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-005,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-006,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-006,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-007,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-007,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-008,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-008,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-009,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-009,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-010,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-010,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-011,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-011,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-012,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-012,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-013,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-013,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-014,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-014,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-015,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-015,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-016,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-016,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-017,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-017,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-018,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-018,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-019,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-019,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-analytics-node-020,ACCT-ANALYTICS,Compute,us-west-2,Memory-Optimized-Hours
+res-analytics-db-020,ACCT-ANALYTICS,Database,us-west-2,Warehouse-Compute-Credits
+res-backup-vault-001,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-001,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-002,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-002,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-003,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-003,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-004,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-004,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-005,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-005,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-006,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-006,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-007,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-007,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-008,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-008,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-009,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-009,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-010,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-010,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-011,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-011,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-012,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-012,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-013,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-013,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-014,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-014,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-backup-vault-015,ACCT-BACKUP,Backup,us-east-1,Archive-Storage-GB
+res-log-ingest-015,ACCT-LOGGING,Logging,us-east-1,Log-Ingested-GB
+res-shared-k8s-cluster-01,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-01,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-02,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-02,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-03,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-03,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-04,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-04,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-05,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-05,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-06,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-06,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-07,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-07,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-08,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-08,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-09,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-09,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-10,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-10,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-11,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-11,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-12,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-12,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-13,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-13,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-14,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-14,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-shared-k8s-cluster-15,ACCT-SHARED,Container Platform,us-east-1,Shared-K8s-Node-Hours
+res-shared-gateway-15,ACCT-SHARED,Data Transfer,us-east-1,Inter-Region-Data-GB
+res-orphan-serverless-001,ACCT-SHARED,Serverless,us-east-1,Function-Invocations
+res-conflict-storage-002,ACCT-SHARED,Object Storage,us-west-2,Standard-Storage-GB
+res-corrupt-prod-003,ACCT-ANALYTICS,Compute,us-west-2,vCPU-Hours
+res-spike-imaging-gpu-004,ACCT-IMAGING,Compute,us-east-1,GPU-Processing-Hours

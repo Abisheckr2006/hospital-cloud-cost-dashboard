@@ -1,0 +1,167 @@
+resource_id,cloud_account_id,business_unit,product_id,feature_id,allocation_status,tag_last_updated,tag_source
+res-img-comp-001,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-002,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-002,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-003,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-003,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-004,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-005,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-005,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-006,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-006,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-007,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-007,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-008,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-009,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-009,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-010,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-010,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-011,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-012,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-012,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-013,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-013,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-014,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-014,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-015,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-016,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-016,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-017,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-017,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-018,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-019,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-019,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-020,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-020,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-021,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-021,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-022,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-023,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-023,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-024,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-comp-024,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-img-storage-025,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-001,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-001,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-002,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-002,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-003,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-003,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-004,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-005,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-005,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-006,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-006,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-007,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-008,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-008,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-009,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-009,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-010,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-010,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-011,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-012,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-012,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-013,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-013,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-014,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-015,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-015,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-016,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-016,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-017,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-017,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-018,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-019,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-019,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-app-020,ACCT-PORTAL,Patient Portal,Patient Portal,Patient Login,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-portal-db-020,ACCT-PORTAL,Patient Portal,Patient Portal,Document Access,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-001,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-002,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-002,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-003,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-003,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-004,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-004,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-005,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-006,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-006,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-007,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-007,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-008,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-009,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-009,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-010,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-010,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-011,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-011,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-012,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-013,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-013,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-014,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-014,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-015,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-016,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-016,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-017,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-017,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-018,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-018,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-019,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-node-020,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Data Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-analytics-db-020,ACCT-ANALYTICS,Clinical Analytics,Clinical Analytics Platform,Analytics Queries,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-001,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-001,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-002,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-003,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-003,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-004,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-004,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-005,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-005,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-006,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-007,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-007,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-008,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-008,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-009,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-010,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-010,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-011,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-011,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-012,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-012,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-013,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-014,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-014,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-backup-vault-015,ACCT-BACKUP,Infrastructure,Backup & Recovery,Backup Storage,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-log-ingest-015,ACCT-LOGGING,Infrastructure,Hospital Logging Platform,Log Ingestion,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-01,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-02,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-02,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-03,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-03,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-04,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-04,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-05,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-06,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-06,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-07,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-07,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-08,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-09,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-09,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-10,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-10,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-11,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-11,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-12,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-13,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-13,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-14,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-gateway-14,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-shared-k8s-cluster-15,ACCT-SHARED,Infrastructure,Shared Platform,Container Cluster,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
+res-conflict-storage-002,ACCT-SHARED,Emergency Services,Patient Portal,Document Access,TAGGED,2026-05-10T08:00:00Z,Terraform-CI
+res-conflict-storage-002,ACCT-SHARED,Radiology,Medical Imaging Platform,Image Storage,TAGGED,2026-05-12T10:00:00Z,Manual-Console
+res-corrupt-prod-003,ACCT-ANALYTICS,Clinical Analytics,PROD-INVALID-LEGACY-SYS,Legacy Report,INVALID_MAPPING,2026-01-15T00:00:00Z,Legacy-Script
+res-spike-imaging-gpu-004,ACCT-IMAGING,Radiology,Medical Imaging Platform,Image Processing,TAGGED,2026-04-15T14:30:00Z,AWS-Tags-Automation
