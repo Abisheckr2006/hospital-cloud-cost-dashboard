@@ -1,0 +1,32 @@
+activity_id,date,business_unit,product_id,feature_id,activity_type,activity_volume,unit
+ACT-00001,2026-01-01,Radiology,Medical Imaging Platform,Image Processing,images processed,132789,images
+ACT-00002,2026-01-01,Patient Portal,Patient Portal,Patient Login,portal sessions,79218,sessions
+ACT-00003,2026-01-01,Clinical Analytics,Clinical Analytics Platform,Report Generation,reports generated,5268,reports
+ACT-00004,2026-01-01,Infrastructure,Backup & Recovery,Backup Storage,backup GB,53940,GB
+ACT-00005,2026-01-01,Infrastructure,Hospital Logging Platform,Log Ingestion,logs ingested GB,30692,GB
+ACT-00006,2026-02-01,Radiology,Medical Imaging Platform,Image Processing,images processed,127915,images
+ACT-00007,2026-02-01,Patient Portal,Patient Portal,Patient Login,portal sessions,86891,sessions
+ACT-00008,2026-02-01,Clinical Analytics,Clinical Analytics Platform,Report Generation,reports generated,5991,reports
+ACT-00009,2026-02-01,Infrastructure,Backup & Recovery,Backup Storage,backup GB,49755,GB
+ACT-00010,2026-02-01,Infrastructure,Hospital Logging Platform,Log Ingestion,logs ingested GB,30449,GB
+ACT-00011,2026-03-01,Radiology,Medical Imaging Platform,Image Processing,images processed,132975,images
+ACT-00012,2026-03-01,Patient Portal,Patient Portal,Patient Login,portal sessions,78611,sessions
+ACT-00013,2026-03-01,Clinical Analytics,Clinical Analytics Platform,Report Generation,reports generated,5035,reports
+ACT-00014,2026-03-01,Infrastructure,Backup & Recovery,Backup Storage,backup GB,55559,GB
+ACT-00015,2026-03-01,Infrastructure,Hospital Logging Platform,Log Ingestion,logs ingested GB,32808,GB
+ACT-00016,2026-04-01,Radiology,Medical Imaging Platform,Image Processing,images processed,123269,images
+ACT-00017,2026-04-01,Patient Portal,Patient Portal,Patient Login,portal sessions,79865,sessions
+ACT-00018,2026-04-01,Clinical Analytics,Clinical Analytics Platform,Report Generation,reports generated,5917,reports
+ACT-00019,2026-04-01,Infrastructure,Backup & Recovery,Backup Storage,backup GB,48404,GB
+ACT-00020,2026-04-01,Infrastructure,Hospital Logging Platform,Log Ingestion,logs ingested GB,33843,GB
+ACT-00021,2026-05-01,Radiology,Medical Imaging Platform,Image Processing,images processed,116935,images
+ACT-00022,2026-05-01,Patient Portal,Patient Portal,Patient Login,portal sessions,78730,sessions
+ACT-00023,2026-05-01,Clinical Analytics,Clinical Analytics Platform,Report Generation,reports generated,5752,reports
+ACT-00024,2026-05-01,Infrastructure,Backup & Recovery,Backup Storage,backup GB,54195,GB
+ACT-00025,2026-05-01,Infrastructure,Hospital Logging Platform,Log Ingestion,logs ingested GB,30244,GB
+ACT-00026,2026-05-01,Research,Clinical Analytics Platform,Analytics Queries,analytics queries,0,queries
+ACT-00027,2026-06-01,Radiology,Medical Imaging Platform,Image Processing,images processed,117315,images
+ACT-00028,2026-06-01,Patient Portal,Patient Portal,Patient Login,portal sessions,84750,sessions
+ACT-00029,2026-06-01,Clinical Analytics,Clinical Analytics Platform,Report Generation,reports generated,5718,reports
+ACT-00030,2026-06-01,Infrastructure,Backup & Recovery,Backup Storage,backup GB,48045,GB
+ACT-00031,2026-06-01,Infrastructure,Hospital Logging Platform,Log Ingestion,logs ingested GB,34219,GB

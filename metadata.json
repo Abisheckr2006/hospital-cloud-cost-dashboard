@@ -1,0 +1,6 @@
+{
+  "name": "Hospital Cloud Cost Attribution Dashboard",
+  "description": "Unit-Economics & Cloud Spend Attribution for multi-account medical images, logs, backups, and workloads",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
