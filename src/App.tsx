@@ -3,6 +3,7 @@ import { Sidebar } from './components/Sidebar.js';
 import { TopBar } from './components/TopBar.js';
 import { FinOpsCopilot } from './components/FinOpsCopilot.js';
 import { GlobalSearchModal } from './components/GlobalSearchModal.js';
+import { ErrorBoundary } from './components/ErrorBoundary.js';
 import { DemoRole, GlobalFilters } from './types/index.js';
 import { api } from './services/api.js';
 
@@ -82,45 +83,47 @@ export default function App() {
 
         {/* Scrollable Viewport */}
         <main className="flex-1 overflow-y-auto" key={refreshKey}>
-          {activeTab === 'dashboard' && (
-            <DashboardPage currentRole={currentRole} onNavigateTab={setActiveTab} />
-          )}
+          <ErrorBoundary fallbackTitle="FinOps Page View Error">
+            {activeTab === 'dashboard' && (
+              <DashboardPage currentRole={currentRole} onNavigateTab={setActiveTab} />
+            )}
 
-          {activeTab === 'cost-allocation' && <CostAllocationPage />}
+            {activeTab === 'cost-allocation' && <CostAllocationPage />}
 
-          {activeTab === 'cost-optimization' && (
-            <OptimizationPage currentRole={currentRole} onNavigateTab={setActiveTab} />
-          )}
+            {activeTab === 'cost-optimization' && (
+              <OptimizationPage currentRole={currentRole} onNavigateTab={setActiveTab} />
+            )}
 
-          {activeTab === 'business-units' && (
-            <BusinessUnitsPage
-              onSelectBU={() => {
-                setActiveTab('cost-allocation');
-              }}
-            />
-          )}
+            {activeTab === 'business-units' && (
+              <BusinessUnitsPage
+                onSelectBU={() => {
+                  setActiveTab('cost-allocation');
+                }}
+              />
+            )}
 
-          {activeTab === 'products' && <ProductsPage />}
+            {activeTab === 'products' && <ProductsPage />}
 
-          {activeTab === 'unit-economics' && <UnitEconomicsPage />}
+            {activeTab === 'unit-economics' && <UnitEconomicsPage />}
 
-          {activeTab === 'cloud-accounts' && <CloudAccountsPage />}
+            {activeTab === 'cloud-accounts' && <CloudAccountsPage />}
 
-          {activeTab === 'data-quality' && <DataQualityPage />}
+            {activeTab === 'data-quality' && <DataQualityPage />}
 
-          {activeTab === 'experiment' && <ExperimentPage />}
+            {activeTab === 'experiment' && <ExperimentPage />}
 
-          {activeTab === 'change-review' && <ChangeReviewPage currentRole={currentRole} />}
+            {activeTab === 'change-review' && <ChangeReviewPage currentRole={currentRole} />}
 
-          {activeTab === 'audit' && <AuditPage />}
+            {activeTab === 'audit' && <AuditPage />}
 
-          {activeTab === 'edge-cases' && <EdgeCasesPage />}
+            {activeTab === 'edge-cases' && <EdgeCasesPage />}
 
-          {activeTab === 'documentation' && <DocumentationPage />}
+            {activeTab === 'documentation' && <DocumentationPage />}
 
-          {activeTab === 'privacy' && <PrivacyPage />}
+            {activeTab === 'privacy' && <PrivacyPage />}
 
-          {activeTab === 'evaluation' && <EvaluationChecklistPage onNavigateTab={setActiveTab} />}
+            {activeTab === 'evaluation' && <EvaluationChecklistPage onNavigateTab={setActiveTab} />}
+          </ErrorBoundary>
         </main>
       </div>
 

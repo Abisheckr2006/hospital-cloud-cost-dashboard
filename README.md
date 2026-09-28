@@ -1,6 +1,6 @@
 # Hospital Cloud Cost Attribution & Unit-Economics Dashboard
 
-An enterprise-grade FinOps intelligence platform designed for healthcare organizations to attribute multi-cloud infrastructure spend down to clinical business units, products, and features with deterministic confidence scoring and defensive failure handling.
+An enterprise-grade FinOps intelligence platform designed for healthcare organizations to attribute multi-cloud infrastructure spend down to clinical business units, products, and features with deterministic confidence scoring, defensive error handling, and React Error Boundaries.
 
 ---
 
@@ -9,136 +9,275 @@ An enterprise-grade FinOps intelligence platform designed for healthcare organiz
 The platform uses a decoupled client-server architecture with an in-memory SQLite database and disk persistence:
 
 - **Frontend**: React 19, TypeScript, Tailwind CSS v4, Motion (Framer Motion), Recharts, Lucide Icons.
+- **Error Handling**: React Error Boundaries (`ErrorBoundary.tsx`), defensive API error handlers, loading/success/empty/error component states.
 - **Backend API**: Node.js, Express, SQLite (`sql.js`).
 - **Attribution Engine**: 5-tiered waterfall processing pipeline executing deterministic rules, proportional telemetry allocation, and clinical activity splits.
 - **Governance**: RBAC role switching (`EXECUTIVE`, `FINOPS_ANALYST`, `PRODUCT_OWNER`), two-person approval workflows for tag reassignments, operational rollback, and immutable audit logs.
 
 ---
 
-## 📚 Technical Documentation
+## 🛡️ React Error Boundaries & Failure Handling
 
-Complete architectural documentation is available in the [`docs/`](./docs) directory:
+### 1. React Error Boundary Architecture (`ErrorBoundary.tsx`)
+The frontend application wraps component trees in a reusable `ErrorBoundary` component:
+- **Crash Protection**: Intercepts uncaught runtime rendering errors in sub-tree components, preventing catastrophic blank-screen application crashes.
+- **Healthcare FinOps Fallback UI**: Displays a clean, non-disruptive error card with a **"Retry View Component"** button to reset state and a **"Reload Application"** button.
+- **Security & Credential Masking**: Redacts API keys, tokens, database connection strings, and sensitive environment variables from client-facing error cards.
+- **Development Diagnostics**: In non-production environments, provides expandable component stack traces for rapid debugging.
 
-- [📄 Database Schema Documentation](docs/DATABASE_SCHEMA.md) — Comprehensive overview of all 14 SQLite tables, columns, constraints, data types, indexes, and data flows.
-- [📊 Entity-Relationship (ER) Diagram](docs/ER_DIAGRAM.md) — Mermaid ER diagram illustrating structural entity relationships across clinical dimensions, billing records, allocation results, and audit trails.
-- [🔌 API Endpoint Contracts](docs/API_CONTRACTS.md) — Full specification of Express API routes, request parameters, response schemas, HTTP status codes, and JSON response examples.
-- [🧮 Mathematical Model & Confidence Scoring](docs/CONFIDENCE_SCORING.md) — Concrete mathematical formulations for confidence ratings (\(C_{\text{final}} = C_{\text{base}} \times Q \times F \times E\)) across all 5 waterfall levels.
-- [🧪 Testing Strategy & Execution Report](docs/TESTING.md) — Detailed catalog of unit tests, automated integration test suites, failure-case handling, and execution metrics.
-
----
-
-## 🌊 Attribution Waterfall
-
-The allocation engine processes raw cloud billing records through a 5-tier waterfall:
-
-```
-[ Raw Billing Line Item ]
-           │
-           ├── Level 1: Direct Account / Billing Tag  ───> (HIGH Confidence)
-           │     Valid business unit, product, and feature in export
-           │
-           ├── Level 2: Resource Governance Tag (IaC)  ───> (HIGH / NONE Confidence)
-           │     Dedicated resource tag mapping from Terraform
-           │
-           ├── Level 3: Usage Telemetry Allocation  ───────> (MEDIUM / LOW Confidence)
-           │     Proportional CPU/Storage telemetry split across workloads
-           │
-           ├── Level 4: Product Business Activity  ───────> (MEDIUM Confidence)
-           │     Proportional split based on DICOM images/portal sessions
-           │
-           └── Level 5: Unallocated Pool  ────────────────> (NONE Confidence)
-                 Fallback for untagged spend; flags validation errors
-```
+### 2. Defensive Backend & API Error Handling
+- **API Request Resilience**: Client fetch wrapper (`src/services/api.ts`) validates HTTP status codes and propagates structured error messages.
+- **Consistent View States**: All primary dashboard pages manage four explicit UI states: `Loading`, `Success`, `Empty`, and `Error`.
+- **Validation Error Log**: Backend catches data anomalies (duplicate billing, stale telemetry, missing tags, invalid product IDs) and persists records in `data_validation_errors`.
 
 ---
 
-## 🧮 Confidence Scoring Formulation
+## 🛢️ Database Schema & Architecture
 
-Every allocation result receives a deterministic confidence rating (\(\mathbf{HIGH}\), \(\mathbf{MEDIUM}\), \(\mathbf{LOW}\), or \(\mathbf{NONE}\)) computed via:
+The system uses an SQLite database (`data/hospital_finops.sqlite`) managed via `sql.js`.
+
+### 1. Table Schemas
+
+1. **`business_units`**: Top-level hospital divisions (Radiology, Emergency Services, Clinical Analytics, Patient Portal, Infrastructure, Research).
+   - Columns: `id` (PK), `name` (UK), `code` (UK), `description`, `lead_manager`
+2. **`products`**: Clinical software platforms owned by business units.
+   - Columns: `id` (PK), `name` (UK), `code` (UK), `business_unit_id` (FK), `description`
+3. **`features`**: Functional modules for activity allocation.
+   - Columns: `id` (PK), `name`, `code`, `product_id` (FK), `description`
+4. **`cloud_accounts`**: Cloud provider accounts (`ACCT-IMAGING`, `ACCT-PORTAL`, `ACCT-ANALYTICS`, `ACCT-BACKUP`, `ACCT-LOGGING`, `ACCT-SHARED`).
+   - Columns: `id` (PK), `account_id` (UK), `name`, `provider`, `environment`
+5. **`resources`**: Inventory of cloud infrastructure resources.
+   - Columns: `id` (PK), `resource_id` (UK), `cloud_account_id` (FK), `service`, `region`, `usage_type`
+6. **`billing_records`**: Raw ingested cloud provider line items.
+   - Columns: `id` (PK), `billing_id` (UK), `billing_date`, `cloud_provider`, `cloud_account_id` (FK), `service`, `region`, `resource_id` (FK), `usage_type`, `cost`, `currency`, `allocation_tag`, `product_id`, `feature_id`, `business_unit`, `billing_status`, `timestamp`
+7. **`usage_telemetry`**: Resource usage telemetry metrics for Level 3 allocation.
+   - Columns: `id` (PK), `telemetry_id` (UK), `timestamp`, `cloud_account_id` (FK), `resource_id` (FK), `product_id`, `feature_id`, `business_unit`, `usage_type`, `usage_quantity`, `unit`, `freshness_timestamp`
+8. **`allocation_tags`**: Governance tags configured via Terraform IaC or manual approval (Level 2).
+   - Columns: `id` (PK), `resource_id` (FK), `cloud_account_id` (FK), `business_unit`, `product_id`, `feature_id`, `allocation_status`, `tag_last_updated`, `tag_source`
+9. **`product_activity`**: Monthly workload business metrics (images, sessions, reports) for Level 4 allocation.
+   - Columns: `id` (PK), `activity_id` (UK), `date`, `business_unit`, `product_id`, `feature_id`, `activity_type`, `activity_volume`, `unit`
+10. **`allocation_results`**: Output results generated by the 5-tier waterfall engine.
+    - Columns: `id` (PK), `allocation_id` (UK), `billing_id` (FK), `business_unit`, `product_id`, `feature_id`, `allocated_amount`, `allocation_method`, `confidence`, `evidence_source`, `evidence_timestamp`, `allocation_status`, `reason`
+11. **`audit_logs`**: Immutable audit trail tracking governance actions and rollbacks.
+    - Columns: `id` (PK), `audit_id` (UK), `timestamp`, `user`, `role`, `action`, `object_type`, `object_id`, `old_value`, `new_value`, `reason`, `status`, `impact_amount`
+12. **`change_requests`**: Two-person approval workflow requests for tag reassignment.
+    - Columns: `id` (PK), `change_id` (UK), `requester`, `role`, `product`, `business_unit`, `resource_id` (FK), `old_allocation`, `proposed_allocation`, `cost_impact`, `reason`, `created_at`, `status`, `reviewer`, `reviewed_at`, `previous_state_json`
+13. **`experiments`**: Records results of baseline vs treatment FinOps experiments.
+    - Columns: `id` (PK), `run_at`, `baseline_total_cost`, `baseline_allocated_cost`, `baseline_unallocated_cost`, `baseline_allocation_pct`, `treatment_total_cost`, `treatment_allocated_cost`, `treatment_unallocated_cost`, `treatment_allocation_pct`, `target_allocation_pct`, `pp_improvement`, `rel_improvement_pct`, `status`
+14. **`data_validation_errors`**: Catches duplicate billing, stale telemetry, missing tags, conflicting tags, and invalid product tags.
+    - Columns: `id` (PK), `record_id`, `source`, `field`, `issue_type`, `reason`, `affected_cost`, `timestamp`
+
+---
+
+### 2. Entity-Relationship (ER) Diagram
+
+```mermaid
+erDiagram
+    BUSINESS_UNITS ||--o{ PRODUCTS : owns
+    PRODUCTS ||--o{ FEATURES : contains
+    CLOUD_ACCOUNTS ||--o{ RESOURCES : hosts
+    CLOUD_ACCOUNTS ||--o{ BILLING_RECORDS : bills
+    RESOURCES ||--o{ BILLING_RECORDS : generates
+    RESOURCES ||--o{ ALLOCATION_TAGS : configured_by
+    RESOURCES ||--o{ USAGE_TELEMETRY : produces
+    PRODUCTS ||--o{ PRODUCT_ACTIVITY : tracks
+    BILLING_RECORDS ||--o{ ALLOCATION_RESULTS : attributes
+    BILLING_RECORDS ||--o{ DATA_VALIDATION_ERRORS : flags
+    RESOURCES ||--o{ CHANGE_REQUESTS : targets
+    CHANGE_REQUESTS ||--o{ AUDIT_LOGS : records
+
+    BUSINESS_UNITS {
+        int id PK
+        string name UK
+        string code UK
+    }
+
+    PRODUCTS {
+        int id PK
+        string name UK
+        int business_unit_id FK
+    }
+
+    FEATURES {
+        int id PK
+        string name
+        int product_id FK
+    }
+
+    CLOUD_ACCOUNTS {
+        int id PK
+        string account_id UK
+        string provider
+    }
+
+    RESOURCES {
+        int id PK
+        string resource_id UK
+        string cloud_account_id FK
+    }
+
+    BILLING_RECORDS {
+        int id PK
+        string billing_id UK
+        string resource_id FK
+        double cost
+    }
+
+    USAGE_TELEMETRY {
+        int id PK
+        string telemetry_id UK
+        string resource_id FK
+        double usage_quantity
+    }
+
+    ALLOCATION_TAGS {
+        int id PK
+        string resource_id FK
+        string business_unit
+        string product_id
+    }
+
+    PRODUCT_ACTIVITY {
+        int id PK
+        string activity_id UK
+        string product_id
+        double activity_volume
+    }
+
+    ALLOCATION_RESULTS {
+        int id PK
+        string allocation_id UK
+        string billing_id FK
+        double allocated_amount
+        string confidence
+    }
+
+    CHANGE_REQUESTS {
+        int id PK
+        string change_id UK
+        string resource_id FK
+        string status
+    }
+
+    AUDIT_LOGS {
+        int id PK
+        string audit_id UK
+        string action
+    }
+```
+
+---
+
+## 🔌 API Endpoint Documentation
+
+Base Path: `/api` | Format: JSON | Protocol: HTTP/REST
+
+### 1. Health & Executive Summary
+- `GET /api/health`: Health status and server timestamp.
+- `GET /api/dashboard`: Summary KPIs (`totalCost`, `allocatedCost`, `unallocatedCost`, `allocationRate`), spend by BU/product/service/account, monthly trend, confidence distribution, and top cost drivers.
+
+### 2. Attribution & Evidence
+- `GET /api/allocation`: Paginated list of allocation results with filters (`bu`, `product`, `method`, `confidence`, `status`, `search`, `limit`, `offset`).
+- `GET /api/allocation/:id`: Detailed record of a single allocation item.
+- `GET /api/evidence/:id`: Full audit evidence chain (raw billing record, IaC resource tags, usage telemetry, product activity).
+
+### 3. Dimensions & Unit Economics
+- `GET /api/business-units`: Business units summary with spend totals, allocation rate, and product count.
+- `GET /api/products`: Clinical products with feature cost breakdown.
+- `GET /api/unit-economics`: Cost per unit metrics (cost/image, cost/session, cost/report, cost/GB) and 6-month monthly trend.
+
+### 4. FinOps Governance & Change Management
+- `GET /api/change-requests`: List allocation change requests.
+- `POST /api/change-requests`: Submit new tag reassignment request.
+- `POST /api/change-requests/:id/approve`: Approve change request (`FINOPS_ANALYST` role required). Re-runs allocation engine.
+- `POST /api/change-requests/:id/rollback`: Execute operational rollback of applied change request (`FINOPS_ANALYST` role required).
+- `GET /api/audit`: Immutable audit log trail.
+
+### 5. Analytics & Experiments
+- `GET /api/data-quality`: Data quality health scores and validation errors.
+- `GET /api/data-freshness`: Data freshness age (hours) and SLA compliance status.
+- `GET /api/anomalies`: Cost anomalies (> 25% spike above 5-month moving average and > $200).
+- `GET /api/recommendations`: Optimization recommendations (idle GPU, cold storage tiering, untagged resources).
+- `GET /api/experiment`: Baseline vs treatment FinOps experiment results.
+- `POST /api/experiment/run`: Trigger fresh FinOps A/B allocation experiment run.
+
+---
+
+## 🌊 Attribution Waterfall & Mathematical Model
+
+The allocation engine processes billing line items through a 5-tier waterfall:
+
+1. **Level 1 — Direct Billing Tag**: Valid BU, product, feature tag in raw export (\(C_{\text{final}} = 1.0 \implies \mathbf{HIGH}\)).
+2. **Level 2 — Resource Tag (IaC)**: Tagged via Terraform (\(C_{\text{final}} = 1.0 \implies \mathbf{HIGH}\)). Conflicting tags or invalid product IDs enter Unallocated pool (\(C_{\text{final}} = 0.0 \implies \mathbf{NONE}\)).
+3. **Level 3 — Usage Telemetry**: Proportional usage split (\(\text{Alloc}_i = \text{Cost} \times \frac{\text{Usage}_i}{\sum \text{Usage}_j}\)). Fresh telemetry (\(\le 72\text{h}\)) maps to \(\mathbf{MEDIUM}\); stale telemetry (\(> 72\text{h}\)) downgrades to \(\mathbf{LOW}\).
+4. **Level 4 — Product Business Activity**: Proportional workload volume split on shared account (\(C_{\text{final}} = 0.70 \implies \mathbf{MEDIUM}\)).
+5. **Level 5 — Unallocated Pool**: Fallback for untagged spend; flags `MISSING_ALLOCATION_TAG` (\(C_{\text{final}} = 0.0 \implies \mathbf{NONE}\)).
+
+Confidence Formula:
 
 \[
 C_{\text{final}} = C_{\text{base}} \times Q \times F \times E
 \]
 
-- **\( C_{\text{base}} \)**: Base confidence factor (Level 1/2 = 1.0; Level 3 = 0.75; Level 4 = 0.70; Level 5 = 0.0).
-- **\( Q \)**: Data Quality multiplier (1.0 for valid metadata; 0.0 for conflicting tags or invalid product IDs).
-- **\( F \)**: Telemetry Freshness multiplier (1.0 if age \(\le 72\text{h}\); 0.5 if age \(> 72\text{h}\)).
-- **\( E \)**: Evidence Completeness multiplier (1.0 if volume \(> 0\); 0.0 if zero volume or missing).
-
 ---
 
-## 🛡️ Failure-Case Handling & Edge Cases
+## 🧪 Granular Unit & Integration Testing Strategy
 
-The platform implements defensive handlers for common enterprise FinOps failures:
+The repository uses **Vitest** for automated unit and integration testing across 5 test suites (25 total tests):
 
-1. **Duplicate Billing Ingestion**: Detects duplicate billing IDs, records errors in `data_validation_errors`, and preserves total cost conservation without double-counting.
-2. **Schema Drift**: Safely isolates records with missing or unexpected fields without crashing the pipeline.
-3. **Missing Allocation Tags**: Prevents arbitrary guessing; routes untagged spend to the Unallocated pool with `NONE` confidence and logs remediation items.
-4. **Stale Telemetry**: Identifies telemetry older than 72 hours, flags `STALE_TELEMETRY`, and downgrades confidence to `LOW`.
-5. **Zero Activity Volume**: Prevents division-by-zero or `NaN`/`Infinity` errors, returning a safe unit cost metric (0.0).
-6. **Shared Infrastructure Split**: Enforces total cost conservation (\(\sum \text{Allocation}_i = \text{BilledCost}\)) across proportional usage splits.
-7. **Invalid Product Mapping**: Identifies unregistered product tags, flags `INVALID_PRODUCT_ID`, and places cost into review.
-8. **Cost Spike Detection**: Identifies spend increases \( > 25\% \) above moving averages and \( > \$200 \), raising high-severity alerts.
-
----
-
-## 🧪 Testing Strategy
-
-The repository includes comprehensive automated unit and integration tests powered by Vitest:
-
-- **Unit Tests (`tests/unit/confidence.test.ts`)**: Validate confidence calculation determinism, tag conflict handling, stale telemetry downgrades, and unallocated fallbacks.
-- **Integration Tests (`tests/integration/pipeline.test.ts`)**: Validate end-to-end data pipeline operations, duplicate billing deduplication, schema drift safety, zero activity stability, and shared infrastructure cost conservation.
-
-### Running Tests
-
-Execute the test suite:
-```bash
-npm test
+### Test Directory Structure
+```
+tests/
+├── unit/
+│   ├── confidence.test.ts      # 7 tests: Waterfall levels & confidence equations
+│   ├── unit-economics.test.ts  # 3 tests: Unit cost & zero-volume safety
+│   ├── analytics.test.ts       # 5 tests: Anomalies, data quality, freshness, recommendations
+│   └── error-boundary.test.ts  # 2 tests: React ErrorBoundary state & error logging
+└── integration/
+    └── pipeline.test.ts        # 8 tests: End-to-end failure handlers & deduplication
 ```
 
-Execute TypeScript type check:
+### Key Tested Scenarios
+1. **Cloud Cost Allocation**: Direct tags (HIGH), IaC resource tags (HIGH), telemetry splits (MEDIUM), activity splits (MEDIUM).
+2. **Missing/Stale Data**: Telemetry > 72h flags `STALE_TELEMETRY` and downgrades confidence to LOW.
+3. **Data Validation & Deduplication**: Duplicate billing records are flagged in `DUPLICATE_BILLING`, cost counted once.
+4. **Zero Activity Handling**: Zero volume activity (\(\text{Volume} = 0\)) returns safe unit cost metric (\(0.0\)) without `NaN`/`Infinity`.
+5. **Shared Infrastructure Cost Conservation**: Verified \(\sum \text{Allocation}_i = \text{BilledCost}\) across 60%/40% telemetry splits.
+6. **Schema Drift Safety**: Invalid schema line items are isolated safely into the unallocated pool without crashing.
+7. **Cost Spike Detection**: Spend increases > 25% above 5-month moving average and > $200 are flagged as HIGH severity anomalies.
+8. **React Error Boundary**: Intercepts rendering exceptions, updates error state, and logs diagnostic telemetry safely.
+
+### Running Tests
 ```bash
+# Execute full test suite
+npm test
+
+# Run TypeScript compilation check
 npm run lint
 ```
 
 ---
 
-## 🚀 Getting Started & Reproducibility
+## 📚 Architectural Documentation Links
 
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or bun
+- [📄 Database Schema Documentation](docs/DATABASE_SCHEMA.md)
+- [📊 Entity-Relationship (ER) Diagram](docs/ER_DIAGRAM.md)
+- [🔌 API Endpoint Contracts](docs/API_CONTRACTS.md)
+- [🧮 Mathematical Model & Confidence Scoring](docs/CONFIDENCE_SCORING.md)
+- [🧪 Testing Strategy & Execution Report](docs/TESTING.md)
 
-### Setup Instructions
+---
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+## 🚀 Getting Started
 
-2. **Generate synthetic datasets & seed SQLite database**:
-   ```bash
-   npm run seed
-   ```
-
-3. **Run automated test suite**:
-   ```bash
-   npm test
-   ```
-
-4. **Start the local development server**:
-   ```bash
-   npm run dev
-   ```
-   Open `http://localhost:3000` in your browser.
-
-5. **Build production bundle**:
-   ```bash
-   npm run build
-   ```
+1. **Install dependencies**: `npm install`
+2. **Seed synthetic data**: `npm run seed`
+3. **Run unit & integration tests**: `npm test`
+4. **Start local dev server**: `npm run dev` (Access at `http://localhost:3000`)
+5. **Build production bundle**: `npm run build`
 
 ---
 
 ## 🔒 Privacy & Compliance
 
-All data in this repository is **synthetic and synthetic-only**. No real patient health information (PHI) or protected medical records are present.
+All data in this repository is **100% synthetic**. No real patient health information (PHI) or confidential medical records are used.

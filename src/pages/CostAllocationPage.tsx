@@ -341,7 +341,7 @@ export const CostAllocationPage: React.FC = () => {
 
       {/* Evidence Inspection Modal */}
       {selectedEvidence && (
-        <EvidenceModal evidenceDetail={selectedEvidence} onClose={() => setSelectedEvidence(null)} />
+        <EvidenceModal evidence={selectedEvidence} onClose={() => setSelectedEvidence(null)} />
       )}
 
       {/* Anomaly Investigation Drawer */}

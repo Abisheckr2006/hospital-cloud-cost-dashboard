@@ -42,6 +42,38 @@ export const VALID_PRODUCTS = [
   'Hospital Logging Platform',
 ];
 
+/**
+ * Hospital FinOps Multi-Tiered Cost Allocation Waterfall Engine
+ * 
+ * Processes raw cloud billing line items through a deterministic 5-level waterfall:
+ * 
+ * 1. LEVEL 1: DIRECT ACCOUNT & BILLING TAG ALLOCATION
+ *    - Matches raw billing records with validated business unit, product, and feature export tags.
+ *    - Confidence: HIGH (C_final = 1.0).
+ * 
+ * 2. LEVEL 2: RESOURCE GOVERNANCE TAG ALLOCATION (IaC)
+ *    - Attributes spend via resource-level tags configured in Infrastructure-as-Code (Terraform).
+ *    - Edge Cases: Flags CONFLICTING_TAGS (multiple BUs) and INVALID_PRODUCT_ID (unknown product tags),
+ *      routing affected records to the Unallocated Pool with NONE confidence.
+ * 
+ * 3. LEVEL 3: USAGE TELEMETRY ALLOCATION (Proportional Split)
+ *    - Splits shared resource costs based on measured CPU/Storage usage quantities:
+ *      Allocation_i = SharedCost * Usage_i / Sum(Usage_j)
+ *    - Freshness Handling: Telemetry older than 72 hours triggers STALE_TELEMETRY error
+ *      and downgrades confidence rating from MEDIUM to LOW (C_final = 0.38).
+ * 
+ * 4. LEVEL 4: PRODUCT BUSINESS ACTIVITY ALLOCATION
+ *    - Splits core shared account costs (ACCT-SHARED) based on monthly clinical workload activity:
+ *      Allocation_i = SharedCost * ActivityVolume_i / Sum(ActivityVolume_j)
+ *    - Confidence: MEDIUM (C_final = 0.70).
+ * 
+ * 5. LEVEL 5: UNALLOCATED POOL FALLBACK
+ *    - Captures spend lacking tags, telemetry, or activity evidence.
+ *    - Flags MISSING_ALLOCATION_TAG validation error and assigns NONE confidence.
+ * 
+ * @param db In-memory SQLite Database instance
+ * @returns Summary containing total spend, allocated vs unallocated totals, waterfall breakdown, and error counts.
+ */
 export function runAllocationEngine(db: Database): AllocationEngineResult {
   // Clear previous allocation results and validation errors for a fresh run
   run(db, 'DELETE FROM allocation_results');
